@@ -9,9 +9,13 @@ const models = {
   Vote: voteModel(sequelize),
 };
 
+// Define the type of the models object keys
+type ModelName = keyof typeof models;
+
 Object.keys(models).forEach((modelName) => {
-  if ((models[modelName] as any).associate) {
-    (models[modelName] as any).associate(models);
+  const key = modelName as ModelName;
+  if ((models[key] as any).associate) {
+    (models[key] as any).associate(models);
   }
 });
 
