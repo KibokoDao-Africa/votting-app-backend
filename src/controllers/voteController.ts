@@ -31,7 +31,7 @@ export const createVote = async (req: Request, res: Response) => {
 
     const newVote = await models.Vote.create({ userId, vote });
     res.status(201).json(newVote);
-  } catch (error) {
-    res.status(500).json({ message: 'Failed to create vote', error: error?.message });
+  } catch (error: any) {
+    res.status(500).json({ message: 'Failed to create vote', error: error.message });
   }
 };
