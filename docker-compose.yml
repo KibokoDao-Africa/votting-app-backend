@@ -2,7 +2,9 @@ version: '3.8'
 
 services:
   app:
+    container_name: voting_app
     build: .
+    image: timothyagevi/voting_app
     ports:
       - "3000:3000"
     environment:
@@ -20,6 +22,7 @@ services:
     command: ["yarn", "start"]
 
   db:
+    container_name: db
     image: postgres:13
     environment:
       POSTGRES_DB: ${DB_NAME}

@@ -1,3 +1,5 @@
+import process from "process";
+
 import app from './app';
 import { sequelize } from './models';
 import dotenv from 'dotenv';
