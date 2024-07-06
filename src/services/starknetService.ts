@@ -1,7 +1,7 @@
 import { Contract, defaultProvider,
     //  Account,
       Abi } from 'starknet';
-import { Abi as ContractAbi } from './abi';
+import { Abi as ContractAbi } from './abi.js';
 
 const provider = defaultProvider;
 const privateKey = process.env.STARKNET_PRIVATE_KEY || '';

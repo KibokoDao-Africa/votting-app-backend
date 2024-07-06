@@ -1,7 +1,7 @@
 import process from "process";
 
-import app from './app';
-import { sequelize } from './models';
+import app from './app.js';
+import { sequelize } from './models/index.js';
 import dotenv from 'dotenv';
 
 dotenv.config();

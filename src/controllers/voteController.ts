@@ -1,8 +1,8 @@
 import { Request, Response } from 'express';
-import models from '../models';
+import models from '../models/index.js'
 import { validationResult } from 'express-validator';
-import { makeVote } from '../services/starknetService';
-import { processPayment } from '../services/paymentService';
+import { makeVote } from '../services/starknetService.js';
+import { processPayment } from '../services/paymentService.js';
 
 export const createVote = async (req: Request, res: Response) => {
   const errors = validationResult(req);

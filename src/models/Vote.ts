@@ -1,5 +1,5 @@
 import { DataTypes, Model, Sequelize, Association } from 'sequelize';
-import { User } from './User'; // Ensure you import the User model correctly
+import { User } from './User.js'; // Ensure you import the User model correctly
 
 export class Vote extends Model {
   public id!: string;

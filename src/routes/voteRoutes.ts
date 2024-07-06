@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { body } from 'express-validator';
-import { createVote } from '../controllers/voteController';
+import { createVote } from '../controllers/voteController.js';
 
 const router = Router();
 

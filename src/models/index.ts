@@ -1,6 +1,6 @@
 import { Sequelize } from 'sequelize';
-import userModel from './User';
-import voteModel from './Vote';
+import userModel from './User.js';
+import voteModel from './Vote.js';
 
 const sequelize = new Sequelize(process.env.DATABASE_URL || 'postgres://user:password@localhost:5432/dbname');
 

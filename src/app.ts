@@ -1,6 +1,6 @@
 import express from 'express';
-import userRoutes from './routes/userRoutes';
-import voteRoutes from './routes/voteRoutes';
+import userRoutes from './routes/userRoutes.js';
+import voteRoutes from './routes/voteRoutes.js';
 
 const app = express();
 app.use(express.json());

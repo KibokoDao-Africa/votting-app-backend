@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import models from '../models';
+import models from '../models/index.js';
 import axios from 'axios';
 import { validationResult } from 'express-validator';
 
