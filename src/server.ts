@@ -13,7 +13,9 @@ const startServer = async () => {
     await sequelize.authenticate();
     console.log('Database connected successfully.');
 
-    await sequelize.sync(); // Ensures that the database tables are created
+    await sequelize.sync({
+     alter:true,
+}); // Ensures that the database tables are created
 
     app.listen(PORT, () => {
       console.log(`Server is running on port ${PORT}`);
